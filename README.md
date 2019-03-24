@@ -1,1 +1,2 @@
-### :point_right: This starter repo has moved to the [ionic-team/starters](https://github.com/ionic-team/starters/tree/master/ionic-angular/official/sidemenu) repo! :point_left:
+# Aplikacija izrađena u Ionic 3
+Aplikacija služi kao prezentaciaj povezivanja sa API-em izređenim u node.js (express).
