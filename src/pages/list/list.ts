@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ToastController, AlertController } from 'ionic-angular';
-
 import { DataServiceProvider } from '../../providers/data-service/data-service';
-
 import { AddTodoPage } from '../../pages/add-todo/add-todo';
-//import { WebSocket } from 'angular2-websocket/angular2-websocket';
 
 @Component({
   selector: 'page-list',
@@ -14,7 +11,6 @@ export class ListPage {
 
   items: Array<{id: string, title: string, description: string}>;
   noData: boolean=false;
-
 
   constructor(public navCtrl: NavController,
             public navParams: NavParams,
@@ -32,22 +28,6 @@ export class ListPage {
 
   buttonRefresh(){
     this.getTodos();
-  }
-
-  test(){
-    this.api.getTest()
-    .subscribe(
-        res => {
-          // Here you can use the response
-          // ...
-        },
-        error => {
-
-            // TODO: Handle error
-            // ...
-
-            console.log(error);
-        });
   }
 
   getTodosId(id){
@@ -94,7 +74,6 @@ export class ListPage {
       alert.present();
   }
 
-
   getTodos(){
     this.api.getTodos()
       .then(data => {
@@ -114,7 +93,6 @@ export class ListPage {
       .catch(err=>{
         console.log(err);
       });
-
   }
 
   addTodo(){

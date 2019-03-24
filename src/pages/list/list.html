@@ -7,9 +7,6 @@
         <button  (click)="addTodo()" ion-button icon-only>
           <ion-icon name="md-add"></ion-icon>
         </button>
-        <!-- <button  (click)="buttonRefresh()" ion-button icon-only>
-          <ion-icon name="refresh"></ion-icon>
-        </button> -->
       </ion-buttons>
     <ion-title>Todos</ion-title>
   </ion-navbar>
@@ -24,11 +21,9 @@
         <ion-item-options side="right">
           <button ion-button color="secondary" (click)="editTodosId(item.id, item.title, item.description)" only-icon>
             <ion-icon name="md-create"></ion-icon>
-
           </button>
           <button ion-button color="danger" (click)="deleteTodosId(item.id)" only-icon>
             <ion-icon name="md-trash"></ion-icon>
-
           </button>
         </ion-item-options>
     </ion-item-sliding>

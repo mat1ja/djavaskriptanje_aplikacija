@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ToastController } from 'ionic-angular';
-
 import { DataServiceProvider } from '../../providers/data-service/data-service';
 
 
